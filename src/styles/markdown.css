@@ -20,7 +20,8 @@
     }
 
     a:not(.no-styling) {
-        @apply relative bg-none link font-medium text-[var(--primary)]
+        /* 核心修复：删掉无效的 link 类，保留其他样式 */
+        @apply relative bg-none font-medium text-[var(--primary)]
         underline decoration-[var(--link-underline)] decoration-1 decoration-dashed underline-offset-4;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
@@ -90,7 +91,6 @@
         }
     }
 
-
     ul, ol {
         li::marker {
             @apply text-[var(--primary)];
@@ -109,7 +109,6 @@
         p:before, p:after {
             @apply content-none;
         }
-
     }
 
     .katex-display-container {
@@ -117,5 +116,4 @@
         overflow-x: auto;
         margin: 1em 0;
     }
-    
 }
