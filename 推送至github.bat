@@ -25,7 +25,7 @@ if errorlevel 1 (
 
 echo.
 echo 4. 推送代码到 main 分支...
-git push -u origin main
+git push -u origin master
 
 :: 3. 执行完成后停留窗口，按任意键退出
 echo.
