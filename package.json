@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "check": "echo 'Skip astro check' && exit 0",
+    "check": "astro check",
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
